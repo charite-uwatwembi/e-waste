@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+torch
+pillow
+numpy
+scikit-learn
+matplotlib
+torchvision
+jupyter
+nbconvert
+ipykernel

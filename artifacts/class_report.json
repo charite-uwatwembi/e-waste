@@ -1,0 +1,79 @@
+{
+  "Battery": {
+    "precision": 0.9642857142857143,
+    "recall": 0.9,
+    "f1-score": 0.9310344827586207,
+    "support": 30.0
+  },
+  "Keyboard": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 30.0
+  },
+  "Microwave": {
+    "precision": 0.8823529411764706,
+    "recall": 1.0,
+    "f1-score": 0.9375,
+    "support": 30.0
+  },
+  "Mobile": {
+    "precision": 1.0,
+    "recall": 0.9666666666666667,
+    "f1-score": 0.9830508474576272,
+    "support": 30.0
+  },
+  "Mouse": {
+    "precision": 0.9375,
+    "recall": 1.0,
+    "f1-score": 0.967741935483871,
+    "support": 30.0
+  },
+  "PCB": {
+    "precision": 0.9354838709677419,
+    "recall": 0.9666666666666667,
+    "f1-score": 0.9508196721311475,
+    "support": 30.0
+  },
+  "Player": {
+    "precision": 0.9629629629629629,
+    "recall": 0.8666666666666667,
+    "f1-score": 0.9122807017543859,
+    "support": 30.0
+  },
+  "Printer": {
+    "precision": 0.9333333333333333,
+    "recall": 0.9333333333333333,
+    "f1-score": 0.9333333333333333,
+    "support": 30.0
+  },
+  "Television": {
+    "precision": 0.9642857142857143,
+    "recall": 0.9,
+    "f1-score": 0.9310344827586207,
+    "support": 30.0
+  },
+  "Washing Machine": {
+    "precision": 0.967741935483871,
+    "recall": 1.0,
+    "f1-score": 0.9836065573770492,
+    "support": 30.0
+  },
+  "accuracy": 0.9533333333333334,
+  "macro avg": {
+    "precision": 0.954794647249581,
+    "recall": 0.9533333333333334,
+    "f1-score": 0.9530402013054656,
+    "support": 300.0
+  },
+  "weighted avg": {
+    "precision": 0.9547946472495809,
+    "recall": 0.9533333333333334,
+    "f1-score": 0.9530402013054655,
+    "support": 300.0
+  },
+  "overall": {
+    "accuracy": 0.9533333333333334,
+    "macro_f1": 0.9530402013054656
+  }
+}
