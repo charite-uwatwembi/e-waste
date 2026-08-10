@@ -1,0 +1,12 @@
+KIGALI E-WASTE MOBILE FRONTEND
+
+1. Copy App.jsx, main.jsx, styles.css, index.html, and vite.config.js into your existing frontend folder.
+2. From the project root run:
+   npm install tailwindcss @tailwindcss/vite
+3. Confirm package.json contains:
+   "dev": "vite frontend"
+4. Start from the project root:
+   npm run dev -- --force
+5. Open the exact Local URL printed by Vite.
+
+The camera requires browser permission and works on localhost during development or HTTPS after deployment.

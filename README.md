@@ -81,24 +81,27 @@ The Roboflow dataset is better for a later detection milestone: its public page 
 ## Project structure
 
 ```text
-.
+E-WASTE/
+├── __pycache__/                 # Generated Python cache files
+├── .venv/                       # Python virtual environment
+├── artifacts/                   # Trained model and evaluation outputs
 ├── backend/
-│   └── app.py                 # FastAPI upload and prediction endpoint
-├── data/
-│   └── raw/                   # Local, untracked datasets
-├── docs/
-│   └── PROJECT_PLAN.md        # Scope, labels, validation, and roadmap
+│   ├── __pycache__/             # Backend Python cache
+│   └── app.py                   # FastAPI backend and model inference
+├── data/                        # Extracted training, validation and test data
 ├── frontend/
-│   ├── index.html             # Upload page
-│   ├── app.js                 # API call and result rendering
-│   └── styles.css             # Mobile-friendly styling
+│   ├── App.jsx                  # React upload and prediction interface
+│   ├── index.html               # Vite HTML entry point
+│   └── main.jsx                 # React application entry point
+├── images/                      # Project images and screenshots
 ├── ml/
-│   ├── data.py                # ImageFolder loading and stratified splits
-│   ├── inspect_dataset.py     # Class counts and data sanity checks
-│   ├── model.py               # MobileNetV3-small transfer-learning model
-│   ├── predict.py             # Checkpoint loading and inference helpers
-│   └── train.py               # Training, evaluation, and artifact export
-├── artifacts/                 # Generated checkpoints and metrics
-├── requirements.txt
-└── README.md
+│   └── train_pre_split.py       # Model training and evaluation script
+├── node_modules/                # Installed frontend dependencies
+├── .gitignore                   # Files and directories excluded from Git
+├── archive.zip                  # Original compressed dataset
+├── LICENSE                      # Project licence
+├── package-lock.json            # Locked npm dependency versions
+├── package.json                 # React and Vite configuration
+├── README.md                    # Project documentation
+└── requirements.txt             # Python dependencies
 ```
