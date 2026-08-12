@@ -33,7 +33,13 @@ if FRONTEND_ORIGIN:
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=LOCAL_ORIGINS,
+    allow_origins=[
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+        "http://localhost:5174",
+        "http://127.0.0.1:5174",
+        "https://kigali-ewaste-classifier.onrender.com",
+    ],
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
