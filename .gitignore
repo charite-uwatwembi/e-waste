@@ -1,1 +1,29 @@
+# Python
 .venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Node
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# Dataset
+data/
+archive.zip
+*.zip
+
+# Environment variables
+.env
+.env.*
+
+# Model artifacts
+artifacts/*
+!artifacts/best.pt
+
+# System files
+.DS_Store
+Thumbs.db
+node_modules
