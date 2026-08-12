@@ -41,15 +41,19 @@ The current model was trained to recognize these ten classes:
 
 The classifier does not identify every type of electronic waste and does not determine whether an item is safe or hazardous.
 
+## Kinyarwanda terminology
+
+The Kinyarwanda wording was informed by [Enviroserve Rwanda's Kinyarwanda website](https://enviroserve.rw/rw/ibyerekeye-enviroserve-rwanda/), particularly its terminology for electronic waste and common electronic devices. The source uses terms such as ibisigazwa by'ibikoresho by'ikoranabuhanga (e-waste), mudasobwa (computer), terefoni (telephone), tereviziyo (television), imashini zicapa (printers) and batiri (batteries).
+
 ## MVP screenshots
 
 ### Mobile classification result
 
-![Mobile result showing an English and Kinyarwanda keyboard classification](images/mvp-classification-result.jpeg)
+![Mobile result showing an English and Kinyarwanda keyboard classification](images/img1.jpeg)
 
 ### Mobile image preview and language selector
 
-![Mobile interface showing the image preview and RW EN language selector](images/mvp-mobile-interface.jpeg)
+![Mobile interface showing the image preview and RW EN language selector](images/img3.jpeg)
 
 <!-- Add additional screenshots below when the interface changes.
 
