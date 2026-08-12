@@ -9,41 +9,36 @@ from PIL import Image, UnidentifiedImageError
 
 from ml.predict import load_checkpoint, predict_pil
 
-
 app = FastAPI(
     title="Kigali E-waste Classifier API",
     version="0.2.0",
 )
 
-
-# Allow the React frontend to communicate with FastAPI.
-LOCAL_ORIGINS = [
-    "http://localhost:5173",
-    "http://127.0.0.1:5173",
-    "http://localhost:5174",
-    "http://127.0.0.1:5174",
-]
-
-FRONTEND_ORIGIN = os.getenv("FRONTEND_ORIGIN")
-
-if FRONTEND_ORIGIN:
-    LOCAL_ORIGINS.append(
-        FRONTEND_ORIGIN.rstrip("/")
-    )
-
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "http://127.0.0.1:5173",
-        "http://localhost:5174",
-        "http://127.0.0.1:5174",
-        "https://kigali-ewaste-classifier.onrender.com",
-    ],
+    allow_origins=["*"],
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+
+# Allow the React frontend to communicate with FastAPI.
+# LOCAL_ORIGINS = [
+#     "http://localhost:5173",
+#     "http://127.0.0.1:5173",
+#     "http://localhost:5174",
+#     "http://127.0.0.1:5174",
+# ]
+
+# FRONTEND_ORIGIN = os.getenv("FRONTEND_ORIGIN")
+
+# if FRONTEND_ORIGIN:
+#     LOCAL_ORIGINS.append(
+#         FRONTEND_ORIGIN.rstrip("/")
+#     )
+
 
 
 # ---------------------------------------------------------
